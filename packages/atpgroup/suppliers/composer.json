@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/suppliers",
+    "description": "Crud Suppliers",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TarekElkhonany",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

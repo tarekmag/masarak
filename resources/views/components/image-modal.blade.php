@@ -1,0 +1,1 @@
+<img class="mainImage" src="{{$src}}" style="width:100%; max-width:100px; cursor: pointer;">

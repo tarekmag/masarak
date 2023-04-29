@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/languages",
+    "description": "Crud Languages",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TariqElkhonany",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

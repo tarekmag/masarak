@@ -1,0 +1,72 @@
+version: '2'
+
+services:
+  #PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+      - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - transiic_network
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8080:80"
+      - "4439:443"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - transiic_network
+
+  #MySQL Service
+  db:
+    image: mysql:5.7.22
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "33069:3306"
+    environment:
+      MYSQL_DATABASE: transiic
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - transiic_network
+
+  #phpMyAdmin Service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+      - PHP_UPLOAD_MAX_FILESIZE=100MB
+    networks:
+      - transiic_network
+
+  #mailhog Service
+  mailhog:
+    image: 'mailhog/mailhog:latest'
+    ports:
+        - "1025:1025"
+        - "8025:8025"
+    networks:
+        - transiic_network
+
+#Networks
+networks:
+  transiic_network:

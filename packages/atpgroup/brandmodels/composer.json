@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/brandmodels",
+    "description": "Crud Brand Models",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TarekElkhonany",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

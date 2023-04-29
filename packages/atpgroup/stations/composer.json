@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/stations",
+    "description": "Crud Stetion",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TarekElkhonany",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

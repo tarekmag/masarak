@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+body{
+    margin:10px;
+    font-family: 'Droid Arabic Kufi', serif;
+    /*font-family: 'droidarabickufi', serif;*/
+}
+#logo{
+    display: inline;
+    margin:0 auto;
+    text-align: center;
+}
+.company-title{
+    text-align: left;
+}
+.search-data{
+    margin-top:15px;
+    float:left;
+}
+.created-by{
+    margin-top:-35px;
+    float:right;
+}
+.copy-right{
+    margin-bottom:-18px;
+}
+.logo{
+    text-align: right;
+}
+.name{
+    font-size: 16px;
+}
+table
+{
+    text-align: center;
+    font-size: 15px;
+}
+thead tr td
+{
+    height:60px; 
+}
+tr td
+{
+    margin-bottom: 20px;
+    padding: 5px;
+    border-spacing: 0;
+}
+
+th {
+    text-align: center; 
+    padding: 5px;
+    font-weight: 300;
+}
+
+table.table-bordered{
+    border:1px solid black;
+}
+table.table-bordered th{
+    border:1px solid black;
+}
+table.table-bordered td{
+    border:1px solid black;
+}
+
+@page :first {
+    header: page-header;
+    margin-top: 45pt;
+}
+@page {
+    header: page-header;
+}
+@page {
+    footer: page-footer;
+    margin-top: 45pt;
+}

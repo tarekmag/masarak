@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/pricinglists",
+    "description": "Crud Brands",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TarekElkhonany",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/roles",
+    "description": "Crud for manage permissions",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TariqElkhonany",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

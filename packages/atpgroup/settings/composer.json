@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/settings",
+    "description": "Management all admin",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tariq",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

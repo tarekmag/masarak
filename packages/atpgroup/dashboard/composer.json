@@ -1,0 +1,13 @@
+{
+    "name": "atpgroup/dashboard",
+    "description": "Statistics for all project",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TariqElkhonany",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

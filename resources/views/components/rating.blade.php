@@ -1,0 +1,1 @@
+<span id="rating-{{$rate_id}}" data-rating="{{$rate}}" data-rating-id="{{$rate_id}}"></span>

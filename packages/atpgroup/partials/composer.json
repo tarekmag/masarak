@@ -1,0 +1,12 @@
+{
+    "name": "atpgroup/partials",
+    "description": "Partials APIS",
+    "authors": [
+        {
+            "name": "Tariq",
+            "email": "tariq@atpgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
